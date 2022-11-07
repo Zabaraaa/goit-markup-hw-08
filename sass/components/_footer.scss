@@ -1,0 +1,151 @@
+.footer {
+    background: var(--background-common-color);
+    padding: 60px 0;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-soc-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--common-color);
+}
+
+.footer-list {
+    color: inherit;
+    display: block;
+}
+
+.footer-logo {
+    display: block;
+    color: var(--common-color);
+    margin-bottom: 20px;
+}
+
+.footer-item-mail,
+.footer-item-tel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.72;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-item-mail {
+    margin-bottom: 9px;
+}
+
+.footer-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.72;
+    letter-spacing: 0.03em;
+    color: var(--common-color);
+    margin-bottom: 9px;
+}
+
+.contacts-address {
+    font-style: normal;
+    margin-bottom: 9px;
+}
+
+.footer .container {
+    display: flex;
+}
+
+.container-footer {
+    margin-right: 70px;
+}
+
+.container-footer-second {
+    margin-top: 12px;
+}
+
+.footer-soc-title {
+    margin-bottom: 20px;
+}
+
+.container-footer-second .list {
+    gap: 10px;
+}
+
+.team-soc-link {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--common-color);
+}
+
+.footer .team-soc-icon {
+    fill: var(--common-color);
+}
+
+.subscription-box {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.footer-input-box {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 37px;
+}
+
+.footer-label {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--common-color);
+}
+
+.footer-input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding: 15px 16px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.footer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    width: 200px;
+    height: 50px;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: var(--common-color);
+    border: none;
+
+    cursor: pointer;
+}
+
+.icon-send {
+    margin-left: 10px;
+}
