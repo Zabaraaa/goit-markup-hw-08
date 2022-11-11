@@ -1,4 +1,3 @@
-
 .footer {
     background: var(--background-common-color);
     padding: 60px 0;
@@ -7,6 +6,18 @@
     padding-bottom: 60px;
 }
 
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    @include desktop{
+    display: flex;
+    flex-wrap: nowrap; 
+    }
+}
 .footer-soc-title {
     font-weight: 700;
     font-size: 14px;
@@ -25,6 +36,8 @@
     display: block;
     color: var(--common-color);
     margin-bottom: 20px;
+    text-align: center;
+
 }
 
 .footer-item-mail,
@@ -36,9 +49,7 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-item-mail {
-    margin-bottom: 9px;
-}
+
 
 .footer-item {
     font-weight: 400;
@@ -46,27 +57,49 @@
     line-height: 1.72;
     letter-spacing: 0.03em;
     color: var(--common-color);
+    text-align: center;
+}
+
+.footer-item:not(:last-child){
     margin-bottom: 9px;
 }
 
+
 .contacts-address {
     font-style: normal;
-    margin-bottom: 9px;
+
 }
 
 .footer .container {
     display: flex;
 }
 
-.container-footer {
-    margin-right: 70px;
+.container-adress {
+    width: 100%;
+    @include tablet{
+        margin-bottom: 60px;
+    }
+    @include desktop{
+        max-width: 231px;
+        margin-bottom: 0;
+    }
+    // margin-right: 70px;
 }
 
 .container-footer-second {
-    margin-top: 12px;
-    flex-direction: column;
+    // margin-top: 12px;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    @include tablet{
+        margin-top: 0;
+    }
+    @include desktop{
+        margin-bottom: 0;
+    }
 }
-.container-footer-second .list{
+
+.container-footer-second .list {
     display: flex;
 }
 
@@ -87,34 +120,54 @@
     fill: var(--common-color);
 }
 
-.subscription-box {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+.footer-tab{
+    @media screen and(min-width:768px){
+        display: inline-flex;
+        align-items: baseline;
+        gap: 165px;
+    }
+    @include desktop{
+        gap: 60px;
+    }
 }
 
-.footer-input-box {
+.footer-subscribe{
     display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 37px;
 }
+.subscription-box {
+    display: block;
+    text-align: center;
+    @include desktop{
+        display: flex;
+        align-items: baseline;
+        text-align: left;
+    }
+}
+
+// .footer-input-box {
+//     // display: flex;
+//     // flex-direction: column-reverse;
+//     // margin-bottom: 20px;
+//     // margin-right: auto;margin-left: auto;
+// }
 
 .footer-label {
-    margin-bottom: 20px;
-
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
+
     color: var(--common-color);
 }
 
 .footer-input {
-    width: 358px;
+    width: 100%;
     height: 50px;
-    margin-right: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    // margin-right: 12px;
     padding: 15px 16px;
 
     font-size: 16px;
@@ -149,6 +202,11 @@
     border: none;
 
     cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
+    @include desktop {
+
+    }
 }
 
 .icon-send {
