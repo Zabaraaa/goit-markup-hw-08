@@ -64,6 +64,10 @@
 
 .container-footer-second {
     margin-top: 12px;
+    flex-direction: column;
+}
+.container-footer-second .list{
+    display: flex;
 }
 
 .footer-soc-title {
