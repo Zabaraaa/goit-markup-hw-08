@@ -2,24 +2,45 @@
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
+.clients .title{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    
+    @include desktop {
+    font-size: 36px;
+    line-height: 1.17;
+    }
+}
 .clients-list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     justify-content: center;
     align-items: center;
+
+    @include desktop {
+        flex-wrap: nowrap;
+    }
 }
 
 .clients-item {
     background-color: transparent;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    width: 170px;
+    width: 210px;
     height: 92px;
     gap: 30px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
     border: 1px solid #2196f3;
+    }
+    @include tablet{
+        width: 226px;
+    }
+    @include desktop {
+    width: 170px;
     }
 }
 

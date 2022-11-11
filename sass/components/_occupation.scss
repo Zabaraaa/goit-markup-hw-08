@@ -1,7 +1,19 @@
+.occupation{
+    display: none;
+    @include desktop{
+        display: block;
+    }
+}
 .occupation__img-thumb {
     position: relative;
+    width: 370px;
 }
-
+.occupation__list {
+display: flex;
+justify-content: center;
+gap: 30px;
+flex-basis: calc((100% / 3) - 60px);
+}
 .occipation__img-text {
     position: absolute;
     bottom: 0;
@@ -21,5 +33,4 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 }

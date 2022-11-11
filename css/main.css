@@ -340,8 +340,25 @@ body {
   margin-bottom: 50px;
 }
 
+.occupation {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .occupation {
+    display: block;
+  }
+}
+
 .occupation__img-thumb {
   position: relative;
+  width: 370px;
+}
+
+.occupation__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-basis: calc(33.3333333333% - 60px);
 }
 
 .occipation__img-text {
@@ -368,11 +385,46 @@ body {
   padding: 94px 0;
 }
 
+.team .title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+}
+@media screen and (min-width: 1200px) {
+  .team .title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    gap: 30px;
+  }
+}
+
 .team-item {
-  width: calc(25% - 30px);
   background: var(--common-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .team-item {
+    width: 352px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-item {
+    width: calc(25% - 30px);
+  }
 }
 
 .team-soc-list {
@@ -432,23 +484,52 @@ body {
   padding-bottom: 94px;
 }
 
+.clients .title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+}
+@media screen and (min-width: 1200px) {
+  .clients .title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    flex-wrap: nowrap;
+  }
 }
 
 .clients-item {
   background-color: transparent;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 92px;
   gap: 30px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-item:hover, .clients-item:focus {
   border: 1px solid #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .clients-item {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-item {
+    width: 170px;
+  }
 }
 
 .clients-link {
