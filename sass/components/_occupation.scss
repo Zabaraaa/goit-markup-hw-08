@@ -1,7 +1,8 @@
 .occupation{
     display: none;
     @include desktop{
-        display: block;
+        display: flex;
+        flex-basis: calc((100% / 3) - 60px);
     }
 }
 .occupation__img-thumb {
@@ -9,10 +10,13 @@
     width: 370px;
 }
 .occupation__list {
-display: flex;
+display: none;
 justify-content: center;
 gap: 30px;
 flex-basis: calc((100% / 3) - 60px);
+@include desktop {
+display: flex;
+}
 }
 .occipation__img-text {
     position: absolute;

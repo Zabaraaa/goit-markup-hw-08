@@ -1,6 +1,9 @@
 .team {
     background: #f5f4fa;
-    padding: 94px 0;
+    padding: 60px 0;
+    @include desktop{
+        padding: 94px 0;
+    }
 }
 .team .title{
     font-weight: 700;

@@ -20,84 +20,125 @@
 		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 	<body>
-		<!-- <header class="header">
+		<header class="header">
 			<div class="container header__container navigation">
-				<a class="logo" href=""> <span class="logo-part-one">Web</span>Studio</a>
-				<nav>
-					<ul class="menu navigation">
-						<li class="menu__item"><a class="menu__link link current" href="">Студія</a></li>
-						<li class="menu__item"><a class="menu__link link" href="./portfolio.html">Портфоліо</a></li>
-						<li class="menu__item"><a class="menu__link link" href="">Контакти</a></li>
+				<a class="logo header-logo" href=""> <span class="logo-part-one">Web</span>Studio</a>
+				<button data-menu-open type="button" class="menu-open-btn">
+					<svg width="24" height="16">
+						<use href="./images/symbol-defs.svg#icon-menu"></use>
+					</svg>
+				</button>
+				
+					<nav>
+						<ul class="menu navigation">
+							<li class="menu__item"><a class="menu__link link current" href="">Студія</a></li>
+							<li class="menu__item"><a class="menu__link link" href="./portfolio.html">Портфоліо</a></li>
+							<li class="menu__item"><a class="menu__link link" href="">Контакти</a></li>
+						</ul>
+					</nav>
+					<ul class="contacts header__contacts navigation">
+						<li class="contacts__item">
+							<a class="contacts__link mail link" href="mailto:info@devstudio.com">
+								<svg class="contacts__icon" width="16" height="12">
+									<use href="./images/symbol-defs.svg#icon-envelope"></use>
+								</svg>
+								info@devstudio.com</a
+							></li
+						>
+						<li class="contacts__item"
+							><a class="contacts__link link" href="tel:+380961111111">
+								<svg class="contacts__icon" width="10" height="16">
+									<use href="./images/symbol-defs.svg#icon-phone"></use>
+								</svg>
+								+38 096 111 11 11</a
+							></li
+						>
 					</ul>
-				</nav>
-				<ul class="contacts header__contacts navigation">
-					<li class="contacts__item">
-						<a class="contacts__link cont link" href="mailto:info@devstudio.com">
-							<svg class="contacts__item" width="16" height="12">
-								<use href="./images/symbol-defs.svg#icon-envelope"></use>
-							</svg>
-							info@devstudio.com</a
-						></li
-					>
-					<li class="contacts__item"
-						><a class="contacts__link link" href="tel:+380961111111">
-							<svg class="contacts__item" width="10" height="16">
-								<use href="./images/symbol-defs.svg#icon-phone"></use>
-							</svg>
-							+38 096 111 11 11</a
-						></li
-					>
-				</ul>
+				
 			</div>
-		</header> -->
-		<main>
-			<section class="hero">
-				<div class="hero__container container">
-					<h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-					<button data-modal-open class="hero__btn" type="button">Замовити послугу</button>
+			<div data-menu class="mob-menu is-hidden">
+				<div class="mob-menu-top">
+					<button data-menu-close type="button" class="menu-close-btn">
+						<svg class="mob-menu-icon" width="18" height="18">
+							<use href="./images/symbol-defs.svg#icon-close-menu"></use>
+						</svg>
+					</button>
+					<nav>
+						<ul class="mob-menu-list mob-navigation">
+							<li class="mob-menu__item"><a class="mob-menu__link link" href="">Студія</a></li>
+							<li class="mob-menu__item"><a class="mob-menu__link link" href="./portfolio.html">Портфоліо</a></li>
+							<li class="mob-menu__item"><a class="mob-menu__link link" href="">Контакти</a></li>
+						</ul>
+					</nav>
 				</div>
-			</section>
-			<section class="about">
-				<div class="container">
-					<ul class="about__list list">
-						<!-- <h2>About</h2> -->
-						<li class="about__item">
-							<div class="about__item-bg">
-								<svg class="about__icon" width="70" height="70">
-									<use href="./images/symbol-defs.svg#icon-antenna"></use>
-								</svg>
-							</div>
-							<h3 class="about__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-							<p class="about__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+				<div class="mob-menu-bottom">
+					<ul class="mob-contacts header__contacts mob-navigation">
+						<li class="mob-contacts__item"><a class="mob-contacts__link link" href="tel:+380961111111">
+								+38 096 111 11 11</a></li>
+						<li class="mob-contacts__item">
+							<a class="mob-contacts__link cont link" href="mailto:info@devstudio.com">
+								info@devstudio.com</a>
 						</li>
-						<li class="about__item">
-							<div class="about__item-bg">
-								<svg width="70" height="70">
-									<use href="./images/symbol-defs.svg#icon-clock"></use>
-								</svg>
-							</div>
-							<h3 class="about__title">ПУНКТУАЛЬНІСТЬ</h3>
-							<p class="about__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-						</li>
-						<li class="about__item">
-							<div class="about__item-bg">
-								<svg width="70" height="70">
-									<use href="./images/symbol-defs.svg#icon-diagram"></use>
-								</svg>
-							</div>
-							<h3 class="about__title">ПЛАНУВАННЯ</h3>
-							<p class="about__text">Так само консультація з широким активом значною мірою зумовлює.</p>
-						</li>
-						<li class="about__item">
-							<div class="about__item-bg">
-								<svg width="70" height="70">
-									<use href="./images/symbol-defs.svg#icon-astronaut"></use>
-								</svg>
-							</div>
-							<h3 class="about__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-							<p class="about__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-						</li>
+						
 					</ul>
+					<ul class="mob-soc-list">
+						<li class="mob-soc-item"><a class="mob-soc-link" href="">Instagram</a></li>
+						<li class="mob-soc-item"><a class="mob-soc-link" href="">Twitten</a></li>
+						<li class="mob-soc-item"><a class="mob-soc-link" href="">Facebook</a></li>
+						<li class="mob-soc-item"><a class="mob-soc-link" href="">Linkedln</a></li>
+					</ul>
+				</div>
+			</div>
+			</header>
+			<main>
+				<section class="hero">
+					<div class="hero__container container">
+						<h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+						<button data-modal-open class="hero__btn" type="button">Замовити послугу</button>
+					</div>
+				</section>
+				<section class="about">
+					<div class="container">
+						<ul class="about__list list">
+							<!-- <h2>About</h2> -->
+							<li class="about__item">
+								<div class="about__item-bg">
+									<svg class="about__icon" width="70" height="70">
+										<use href="./images/symbol-defs.svg#icon-antenna"></use>
+									</svg>
+								</div>
+								<h3 class="about__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+								<p class="about__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+							</li>
+							<li class="about__item">
+								<div class="about__item-bg">
+									<svg width="70" height="70">
+										<use href="./images/symbol-defs.svg#icon-clock"></use>
+									</svg>
+								</div>
+								<h3 class="about__title">ПУНКТУАЛЬНІСТЬ</h3>
+								<p class="about__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+							</li>
+							<li class="about__item">
+								<div class="about__item-bg">
+									<svg width="70" height="70">
+										<use href="./images/symbol-defs.svg#icon-diagram"></use>
+									</svg>
+								</div>
+								<h3 class="about__title">ПЛАНУВАННЯ</h3>
+								<p class="about__text">Так само консультація з широким активом значною мірою зумовлює.</p>
+							</li>
+							<li class="about__item">
+								<div class="about__item-bg">
+									<svg width="70" height="70">
+										<use href="./images/symbol-defs.svg#icon-astronaut"></use>
+									</svg>
+								</div>
+								<h3 class="about__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+								<p class="about__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+							</li>
+						</ul>
+				</div>
 				</div>
 			</section>
 			<section class="occupation">
@@ -510,5 +551,7 @@
 			</div>
 		</div>
 		<script src="./js/modal.js"></script> -->
+		<script src="./js/menu.js"></script>
+		
 	</body>
 </html>

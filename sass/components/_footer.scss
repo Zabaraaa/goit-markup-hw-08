@@ -139,11 +139,11 @@
     text-align: center;
     @include desktop{
         display: flex;
-        align-items: baseline;
+        align-items: center;
         text-align: left;
+        gap: 12px;
     }
 }
-
 // .footer-input-box {
 //     // display: flex;
 //     // flex-direction: column-reverse;
@@ -205,7 +205,7 @@
     margin-right: auto;
     margin-left: auto;
     @include desktop {
-
+transform: translateY(16%);
     }
 }
 
