@@ -2,7 +2,6 @@
     display: none;
     @include desktop{
         display: flex;
-        flex-basis: calc((100% / 3) - 60px);
     }
 }
 .occupation__img-thumb {
@@ -18,6 +17,7 @@ flex-basis: calc((100% / 3) - 60px);
 display: flex;
 }
 }
+
 .occipation__img-text {
     position: absolute;
     bottom: 0;
