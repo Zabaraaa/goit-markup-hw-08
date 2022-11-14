@@ -15,11 +15,9 @@
     }
 }
 .team-list {
-    @include tablet {
 display: flex;
 flex-wrap: wrap;
 gap: 30px;
-    }
 
     @include desktop {
     display: flex;

@@ -40,6 +40,10 @@
     margin-left: auto;
     margin-right: auto;
 
+    @include desktop{
+        text-align: left;
+    }
+
 }
 
 .footer-item-mail,
@@ -60,6 +64,10 @@
     letter-spacing: 0.03em;
     color: var(--common-color);
     text-align: center;
+
+    @include desktop{
+        text-align: left;
+    }
 }
 
 .footer-item:not(:last-child){
@@ -98,6 +106,7 @@
     }
     @include desktop{
         margin-bottom: 0;
+        text-align: left;
     }
 }
 
@@ -143,15 +152,16 @@
         display: flex;
         align-items: center;
         text-align: left;
+        // margin-left: 93px;
         gap: 12px;
     }
 }
-// .footer-input-box {
-//     // display: flex;
-//     // flex-direction: column-reverse;
-//     // margin-bottom: 20px;
-//     // margin-right: auto;margin-left: auto;
-// }
+.footer-input-box {
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 .footer-label {
     font-weight: 700;
@@ -181,6 +191,12 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    @include tablet{
+        width: 450px;
+    }
+    @include desktop {
+        width: 358px;
+    }
 }
 
 .footer-btn {
