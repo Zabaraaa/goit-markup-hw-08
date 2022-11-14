@@ -9,13 +9,10 @@
     width: 370px;
 }
 .occupation__list {
-display: none;
+display: flex;
 justify-content: center;
 gap: 30px;
 flex-basis: calc((100% / 3) - 60px);
-@include desktop {
-display: flex;
-}
 }
 
 .occipation__img-text {
